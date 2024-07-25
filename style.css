@@ -1,0 +1,267 @@
+@import url("https://use.typekit.net/wdz0epa.css");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "heebo", sans-serif;
+    background-color: white;
+}
+header, main, footer{
+    max-width: 1300px;
+    margin: auto;
+
+}
+nav{
+    background-color: #D1F4FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 0  50px 0 0;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav li{
+    font-size: 18px;
+    font-weight: 600;
+}
+nav li:hover{
+    color: #1B7894;
+}
+nav img{
+    margin: 0 ;
+}
+#first{
+    display: flex;
+    align-items: center;
+    padding: 0px 100px  0; 
+     
+}
+#first img{
+    width: 50%;
+    margin-bottom: 0;
+}
+#content{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 62px;
+    color: #1B7894;
+    line-height: 1.2;
+}
+button{
+    border: none;
+    background-color: #2ABEEB;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: #26a3ca;
+}
+p{
+    color: #3C4959;
+    font-size: 18px;
+    width: 80%;
+    margin: 50px 0;
+}
+#third{
+    display: flex;
+    align-items: center;   
+    padding: 100px;       
+    justify-content: space-between; 
+}
+h2{
+    color: #1B7894;
+    font-size: 42px;
+    line-height: 1.2; 
+}
+#content3{
+    width: 50%;
+}
+#fourth{
+    display: flex;
+    padding: 50px 100px;
+    background-color: #D1F4FF;
+    justify-content: space-between;
+    gap: 10%;
+    align-items: center;
+}
+#fourth ul{
+    list-style: none;
+    margin: 30px 0;
+}
+#content4 li{
+    color: #3C4959;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#content4 img{
+    margin: 0 10px 0 0;
+}
+#second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0;
+}
+.servicos{
+    display: flex;
+    gap: 5%;
+    margin-bottom: 10px;
+
+    
+}
+.servico{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    background-color: #D1F4FF;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+}
+.servico:hover{
+    background-color:  white;
+    border: 5px solid #D1F4FF;
+}
+.servico img{
+    width: 70px;
+    align-self: center;
+    margin: 0;
+}
+.servico p{
+    margin:15px 0 0;
+}
+
+
+#fifth{
+    background-color: #255361;
+    padding: 50px 100px;
+
+}
+#fifth h2{
+    color: #D1F4FF;
+    text-align: center;
+}
+#fifth p{
+    color: white;
+    text-align: center;
+
+}
+
+#fifth ul{
+display: flex;
+gap: 100px;
+list-style: none;
+}/* 
+#content5 li{
+    font-size: 18px;
+    margin-bottom: 10px;
+} */
+#content5 {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sixty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+#sixty ul{
+    list-style: none;
+    }
+
+#sixty li{
+    box-shadow: 0px 5px 50px 0px #00000014;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+#sixty a{
+    margin: 0;
+}
+#sixty p{
+text-align: center;
+margin: 0 0 50px;
+}
+#sixty li p{
+    text-align: start;
+    margin: 0;
+}
+#sixty span{
+    color: black;
+    font-weight: bold;
+}
+.icon-contact{
+    background-color: #2ABEEB;
+    width: 53px;
+    height: 53px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+.icon-contact img{
+    align-self: center;
+    width: 50%;
+}
+
+#rodape{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+}
+
+footer{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+footer p{
+    font-size: 12px;
+    margin: 10px;
+    align-self: center;
+    
+    width: 100%;
+    
+}
+a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+#menu-final{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
