@@ -10,12 +10,13 @@
     <header>
         <nav>
             <img src="/images/logo.png" alt="logo">
+            <img src="/images/list.svg" alt="Menu" class="menu-toggle" onclick="ativarmenu()">
+
             <ul id="nav-bar">
-                <a href="#first"><li class="item">Home</li></a>
-                <a href="#fourth"><li class="item">Sobre</li></a>
-                <a href="#second"><li class="item">Serviços</li></a>
-                
-                <a href="#fifth"><li class="item">Contatos</li></a>
+                <li class="item"><a href="#first">Home</a></li>
+                <li class="item"><a href="#fourth">Sobre</a></li>
+                <li class="item"><a href="#second">Serviços</a></li>
+                <li class="item"><a href="#fifth">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -34,10 +35,10 @@
             <div id="content4">
                 <h2>Por que escolher a Alleanza para o seu tratamento odontológico?</h2>
                 <ul>
-                    <li><img src="/images/icon.png" alt="">Atendimento personalizado</li>
-                    <li><img src="/images/icon.png" alt="">Profissionais altamente qualificados</li>
+                    <li><img src="/images/icon.png" alt="">Atendimento humanizado: nós estamos prontas para te ouvir</li>
+                    <li><img src="/images/icon.png" alt="">Profissionais especialistas</li>
                     <li><img src="/images/icon.png" alt="">Ambiente confortável</li>
-                    <li><img src="/images/icon.png" alt="">Compromisso com a Saúde Integral</li>
+                    <li><img src="/images/icon.png" alt="">Compromisso com sua saúde e com o que há mais atual em Odontologia</li>
                 </ul>
                 <a href="https://wa.me/5585991510028" target="_blank"><button>Marcar consulta</button></a>
             </div>
@@ -45,9 +46,9 @@
 
         <section id="third">
             <div id="content3">
-            <h2>Estamos recebendo novos pacientes e mal podemos esperar para conhecê-lo.</h2>
-            <p>Nossa missão é promover e proporcionar saúde aos nossos pacientes, sempre valorizando o conforto e a qualidade no atendimento. Acreditamos que uma abordagem humana e atenciosa é essencial para oferecer um cuidado de excelência.</p>
-        </div>
+                <h2>Estamos recebendo novos pacientes e mal podemos esperar para conhecê-lo.</h2>
+                <p>Nossa missão é promover e proporcionar saúde aos nossos pacientes, sempre valorizando o conforto e a qualidade no atendimento. Acreditamos que uma abordagem humana e atenciosa é essencial para oferecer um cuidado de excelência.</p>
+            </div>
         <img src="/images/fotoclinica.png" alt="">
         </section>
 
@@ -55,9 +56,9 @@
             
 
                     <div id="content5">
-                        <h2>Conheça Nossas Sócias</h2>
+                        <h2>Conheça nossas sócias</h2>
                         <p>Nossa equipe é formada por profissionais altamente qualificadas e dedicadas, que trabalham juntas para oferecer o melhor em cuidados de saúde. A união de nossas experiências e conhecimentos nos permite atender de forma completa e eficiente.</p>
-                        <ul>
+                        <ul id="socias">
                             <li><img src="/images/ivyna.png" alt=""></li>
                             <li><img src="/images/mariana.png" alt=""></li>
 
@@ -174,5 +175,26 @@
         <hr>
         <p>developed by Gio</p>
     </footer>
+    <script>
+        function ativarmenu(){
+            const navBar = document.querySelector('#nav-bar');
+            navBar.classList.toggle('menu-active');
+
+        }
+
+    </script>
+
+    <!-- <script>
+    // script.js
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navBar = document.querySelector('#nav-bar');
+        
+        menuToggle.addEventListener('click', function() {
+            navBar.classList.toggle('menu-active');
+        });
+    });
+
+    </script> -->
 </body>
 </html>
