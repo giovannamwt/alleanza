@@ -6,37 +6,16 @@
     }
 }
 
-body {
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: #1E1E23;
-  opacity:1;
-  font-family: 'work sans', sans serif;
-  font-size: 1.5em;
-  font-weight: 400;
-  transition: 200ms;
-}
-a:hover {
-  opacity:0.5;
-}
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-
-
-
 @media (max-width: 995px) {
     body{
         --fontp: 16px;
         --fonth1: 40px;
         --fonth2 :30px;
         --fontfooter: 16px;
+    }
+
+    header{
+        background-color: var(--azulclaro);
     }
 
     nav{
@@ -67,13 +46,6 @@ ul {
         margin: 0;
     }
 
-
-
-    /* .menu-active #nav-bar li {
-        display: block;
-        padding: 10px 20px;
-        text-align: center;
-    }  */
 
 
     #first{
@@ -116,17 +88,6 @@ ul {
 }
 
 
-.menu-active #nav-bar {
-        
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: var(--azulclaro);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: 200px; 
-}
-
 :root{
     --cinza : #3C4959;
     --btnazul : #2ABEEB; 
@@ -156,7 +117,7 @@ header, main, footer{
     margin: auto;
 
 }
-/* styles.css */
+
 nav {
     background-color: var(--azulclaro);
     display: flex;
@@ -190,29 +151,44 @@ nav img {
 
 /* Estilize o botão hambúrguer */
 .menu-toggle {
-    width: 10%;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+
+
+    padding: 10px; /* Espaçamento interno */
+    display: inline-flex; /* Alinha o SVG centralizado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+} 
+.menu-toggle svg {
+    width: 24px; /* Ajuste o tamanho do SVG conforme necessário */
+    height: 24px; /* Ajuste o tamanho do SVG conforme necessário */
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background: transparent; /* Garante que o fundo continue transparente */
+    outline: none; /* Remove o contorno padrão de foco */
 }
 
-/* Estilos para o menu quando ativado */
-.menu-active ul {
-    display: block;
-    position: absolute;
-    top: 60px; /* Ajuste conforme necessário */
-    right: 20px;
-    background-color: var(--azulclaro);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.menu-active ul li {
-    display: block;
-    padding: 10px 20px;
+#menu-mobile ul{
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    padding: 1rem;
+    list-style: none;
+}
+#menu-mobile li:hover{
+    background-color: var(--btnazul);
 }
 
+.open{
+    display: block !important;
+}
 
-
+#menu-mobile{
+    display: none;
+}
 
 
 #first{
@@ -345,11 +321,7 @@ h2{
 display: flex;
 gap: 100px;
 list-style: none;
-}/* 
-#content5 li{
-    font-size: 18px;
-    margin-bottom: 10px;
-} */
+}
 #content5 {
     width: 100%;
     padding: 0;
