@@ -6,12 +6,37 @@
     }
 }
 
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #1E1E23;
+  opacity:1;
+  font-family: 'work sans', sans serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  transition: 200ms;
+}
+a:hover {
+  opacity:0.5;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+
 @media (max-width: 995px) {
     body{
         --fontp: 16px;
         --fonth1: 40px;
         --fonth2 :30px;
-        --fontfooter: 14px;
+        --fontfooter: 16px;
     }
 
     nav{
@@ -30,6 +55,17 @@
         display: none;
     }
 
+    #content{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content3{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 
 
 
@@ -44,17 +80,15 @@
         margin: 0px 0 50px 0;
         flex-direction: column-reverse;
         align-items: center;      
-         
     }
 
-    button{
-        width: 90%;
+    #content button{
+        width: 100%;
     }
     #first p{
         margin: 20px;
         text-align: center;
         width: 100%;
-        
     }
     h1{
         margin: 0;
@@ -156,7 +190,7 @@ nav img {
 
 /* Estilize o botão hambúrguer */
 .menu-toggle {
-    width: 50%;
+    width: 10%;
     cursor: pointer;
 }
 
