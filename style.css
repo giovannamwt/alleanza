@@ -4,12 +4,15 @@
     .menu-toggle {
         display: none;
     }
+
+
 }
+
 
 @media (max-width: 995px) {
     body{
         --fontp: 16px;
-        --fonth1: 40px;
+        --fonth1: 30px;
         --fonth2 :30px;
         --fontfooter: 16px;
     }
@@ -20,10 +23,12 @@
 
     nav{
         justify-content: space-between;
-    }
+    }    
 
     section{
-        flex-direction: column;  
+        flex-direction: column; 
+        min-width: 300px;
+        
     }
 
     nav img {
@@ -38,10 +43,11 @@
         align-items: center;
         display: flex;
         flex-direction: column;
+        min-width: 300px;
     }
 
     #content3{
-        width: 100%;
+        min-width: 300px;
         padding: 0;
         margin: 0;
     }
@@ -51,7 +57,10 @@
     #first{
         margin: 0px 0 50px 0;
         flex-direction: column-reverse;
-        align-items: center;      
+        align-items: center;   
+        
+        
+
     }
 
     #content button{
@@ -71,8 +80,38 @@
         margin-top: 50px;
     }
 
+    #third{
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+    }
+
+    #third h2{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    #third p{
+            margin: 20px auto 0;
+            text-align: center;
+            width: 100%;
+        
+    }
+    .fotoclinica{
+        width: 200px;
+        
+    }
+
     #content4{
-        width: 95%;
+        min-width: 300px;
+    }
+    
+    #fifth{
+        
+    }
+    #content5{
+        min-width: 300px;
+        margin: auto;
     }
 
     #socias{
@@ -84,6 +123,23 @@
         flex-direction: column;  
     }
 
+    iframe{
+        max-width: 280px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #content6{
+        min-width: 300px;
+    }
+
+    #sixty{
+        padding: 0 50px;
+    }
+
+    #sixty p{
+        width: 280px;
+    }
 
 }
 
@@ -171,6 +227,7 @@ nav img {
     outline: none; /* Remove o contorno padrão de foco */
 }
 
+
 #menu-mobile ul{
     display: flex;
     flex-direction: column;
@@ -197,10 +254,7 @@ nav img {
     padding: 0px 100px  0; 
      
 }
-#first img{
-    width: 50%;
-    margin-bottom: 0;
-}
+
 #content{
     padding: 0;
     margin: 0;
@@ -304,8 +358,8 @@ h2{
 
 #fifth{
     background-color: #255361;
-    padding: 50px 100px;
-
+    display: flex;
+    padding: 50px 0; 
 }
 #fifth h2{
     color: var(--azulclaro);
