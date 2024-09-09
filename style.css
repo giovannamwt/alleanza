@@ -12,7 +12,7 @@
 @media (max-width: 995px) {
     body{
         --fontp: 16px;
-        --fonth1: 30px;
+        --fonth1: 42px;
         --fonth2 :30px;
         --fontfooter: 16px;
     }
@@ -49,7 +49,8 @@
     #content3{
         min-width: 300px;
         padding: 0;
-        margin: 0;
+        margin-right: 50px;
+        width: 100%;
     }
 
 
@@ -98,7 +99,7 @@
         
     }
     .fotoclinica{
-        width: 200px;
+        width: 300px;
         
     }
 
@@ -106,9 +107,7 @@
         min-width: 300px;
     }
     
-    #fifth{
-        
-    }
+
     #content5{
         min-width: 300px;
         margin: auto;
@@ -270,7 +269,7 @@ button{
     color: white;
     padding: 15px 30px;
     border-radius: 10px;
-    font-size:var(--fontfooter);
+    font-size:var(--fontp);
     font-weight: 700;
 }
 button:hover{
@@ -294,8 +293,10 @@ h2{
     line-height: 1.2; 
 }
 #content3{
-    width: 50%;
+    width: 100%;
+    margin-left: 50px;
 }
+
 #fourth{
     display: flex;
     padding: 50px 100px;
